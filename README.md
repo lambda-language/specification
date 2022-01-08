@@ -17,7 +17,10 @@ The language supports many levels of programming as type level and value level. 
 - [Type inference rules]()
 
 ### User applications
-- [Type level programming introduction]()
-- [Real world usecases of type level]()
-- [Some theorical examples]()
-- [Using Lambda as a theorem prover]()
+- [Type level programming introduction](user/type-level.md)
+- [Real world usecases of type level](user/real-world.md)
+- [Some theorical examples](user/theory.md)
+- [Using Lambda as a theorem prover](user/theorem-prover.md)
+
+### Examples
+- [Recursive factorial for ℕ](examples/factorial.lambda)
