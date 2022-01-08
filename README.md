@@ -3,7 +3,7 @@ Lambda is a language inspired by some mathematics notations and mostly influence
 
 The language supports many levels of programming as type level and value level. It is designed to be a functional lambda calculus language with a strong type system while keeping a pleasant and logical syntax.
 
-## Sumary
+## Summary
 
 ### Language implementation specifications
 - [Parsing Lambda language]()
