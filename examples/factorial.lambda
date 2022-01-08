@@ -1,0 +1,5 @@
+// Simple natural factorial function
+facto ← λ⟨ ∀x ∈ ℕ, x ⟩ → 
+  n = 0
+    ? 1
+    : ⟨ ∀rec ∈ ℕ, rec ⟩ ← facto (n - 1) ⇒ n * rec
