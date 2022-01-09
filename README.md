@@ -6,15 +6,15 @@ The language supports many levels of programming as type level and value level. 
 ## Summary
 
 ### Language implementation specifications
-- [Parsing Lambda language]()
-- [Abstract tree elements definitions]()
-- [Interpretation step]()
-  - [Typechecking values]()
-  - [Kindchecking types]()
-  - [Evaluating value expressions]()
-  - [Evaluating type expressions]()
-- [Optimizations]()
-- [Type inference rules]()
+- [Parsing Lambda language](language/parsing.md)
+- [Abstract tree elements definitions](language/grammar.md)
+- [Interpretation step](language/runtime)
+  - [Typechecking values](language/runtime/typechecking.md#values)
+  - [Kindchecking types](language/runtime/typechecking.md#types)
+  - [Evaluating value expressions](language/runtime/evaluation.md#values)
+  - [Evaluating type expressions](language/runtime/evaluation.md#types)
+- [Optimizations](language/optimization.md)
+- [Type inference rules](language/inference-rules.md)
 
 ### User applications
 - [Type level programming introduction](user/type-level.md)
