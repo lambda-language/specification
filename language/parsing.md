@@ -5,7 +5,7 @@ Lambda language syntax can be represented by an universal grammar file. Almost a
 Some basic lexing elements like `identifier` or `number` are described with regex rules.
 | Rule name  | Regex expression |
 | ---------- | ---- |
-| identifier | `~(symbol | number | string) (~space any)+` |
+| identifier | `~(symbol \| number \| string) (~space any)+` |
 | number 	 | `digit+` |
 | string 	 | `"\"" (~"\"" any)* "\""` |
 | symbol 	 | `"←" \| "λ" \| "⟨" \| "⟩" \| "∀" \| "∈" \| "ℕ" \| "⇒"` |
