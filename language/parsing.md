@@ -23,6 +23,7 @@ TypedExpression
 
 #### Forall and uniqueness 
 ```js
+// Domain shouldn't always be specified when it can be infered
 Forall = "∀" identifier ("∈" identifier)?
 Exists = "∃" identifier ("∈" identifier)?
 ```
