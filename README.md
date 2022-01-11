@@ -8,6 +8,7 @@ The language supports many levels of programming as type level and value level. 
 ### Language implementation specifications
 - [Parsing Lambda language](language/parsing.md)
 - [Abstract tree elements definitions](language/grammar.md)
+- [Type system](language/type-system.md)
 - [Interpretation step](language/runtime)
   - [Typechecking values](language/runtime/typechecking.md#values)
   - [Kind-checking types](language/runtime/typechecking.md#types)
