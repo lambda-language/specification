@@ -10,7 +10,7 @@ The language supports many levels of programming as type level and value level. 
 - [Abstract tree elements definitions](language/grammar.md)
 - [Interpretation step](language/runtime)
   - [Typechecking values](language/runtime/typechecking.md#values)
-  - [Kindchecking types](language/runtime/typechecking.md#types)
+  - [Kind-checking types](language/runtime/typechecking.md#types)
   - [Evaluating value expressions](language/runtime/evaluation.md#values)
   - [Evaluating type expressions](language/runtime/evaluation.md#types)
 - [Optimizations](language/optimization.md)
@@ -18,8 +18,8 @@ The language supports many levels of programming as type level and value level. 
 
 ### User applications
 - [Type level programming introduction](user/type-level.md)
-- [Real world usecases of type level](user/real-world.md)
-- [Some theorical examples](user/theory.md)
+- [Real world use-cases of type level](user/real-world.md)
+- [Some theoretical examples](user/theory.md)
 - [Using Lambda as a theorem prover](user/theorem-prover.md)
 
 ### Examples

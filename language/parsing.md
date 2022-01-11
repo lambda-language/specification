@@ -1,5 +1,5 @@
 # Parsing step
-Lambda language syntax can be represented by an universal grammar file. Almost all the syntax is an expression which returns some value. Even the rarely statements in the language can be described in term of an expression.
+Lambda language syntax can be represented by a universal grammar file. Almost all the syntax is an expression which returns some value. Even the rarely statements in the language can be described in terms of an expression.
 
 ### Lexing elements
 Some basic lexing elements like `identifier` or `number` are described with regex rules.
@@ -22,15 +22,15 @@ Expression
   | Set | Value
 ```
 #### Typed expression
-Typed expression is an expressio that let you describe how your value must satisfy a type. Everything that is an expression can be used in a typed expression. The runtime typechecking also let you calling functions which can be recursive or impures.
+Typed expression is an expression that let you describe how your value must satisfy a type. Everything that is an expression can be used in a typed expression. The runtime typechecking also let you calling functions which can be recursive or impures.
 ```js
 Typed
   = Forall | Exists | Set
   | Declaration | Expression
 ```
 
-#### Forall and existance
-The `forall` and `exists` keywords are used to describe the existance state of a variable. Forall means that regardless the type, it must satisfy the way in which the type is described. Exists means that it exists at least one type that satisfy the type description.
+#### Forall and existence
+The `forall` and `exists` keywords are used to describe the existence state of a variable. Forall means that regardless the type, it must satisfy the way in which the type is described. Exist means that it exists at least one type that satisfy the type description.
 ```js
 // Domain shouldn't always be specified when it can be infered
 Forall = "∀" identifier ("∈" identifier)?
@@ -47,7 +47,7 @@ Value
 ```
 
 #### Set
-A set in Lambda is the same as a set in mathematics. It can be represented by a higher and stronger version of the common lists in other programming languages. Set can describe values but also types, implying that it can exists set of types.
+A set in Lambda is the same as a set in mathematics. It can be represented by a higher and stronger version of the common lists in other programming languages. Set can describe values but also types, implying that it can exist set of types.
 ```js
 Set 
   = "{" 
@@ -59,7 +59,7 @@ Set
 ```
 
 #### Variable
-A variable can be simply an identifier which is going to be infered at runtime but it can also be a typed variable using typed expression rules.
+A variable can be simply an identifier which is going to be inferred at runtime, but it can also be a typed variable using typed expression rules.
 ```js
 Variable
   = "⟨" ListOf<Typed, ","> "⟩"
@@ -101,13 +101,13 @@ Operator = Expression symbols Expression
 ```
 
 #### Function
-A function call is not delimited by parenthesis like in other languages. So, it truly depends on the way you do parenthesising.
+A function call is not delimited by parenthesis like in other languages. So, it truly depends on the way you do parenthesise.
 ```js
 Call = (~symbols Expression) (~Declaration Value)
 ```
 
 ### Arithmetic
-Basic arithmetic is natively supported from the parser as it requires a predescence rule and logic.
+Basic arithmetic is natively supported from the parser as it requires a precedence rule and logic.
 
 #### Addition
 ```js
